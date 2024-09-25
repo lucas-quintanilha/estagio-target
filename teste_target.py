@@ -1,20 +1,5 @@
 #############################################
 ################# QUESTÃO 1 #################
-################### SOMA ####################
-#############################################
-
-indice = 13
-soma = 0
-k = 0
-
-while k < indice:
-    k += 1
-    soma += k
-
-print(soma) ### REPOSTA: 91
-
-#############################################
-################# QUESTÃO 2 #################
 ########## SEQUÊNCIA DE FIBONACCI ###########
 #############################################
 
@@ -37,7 +22,34 @@ else:
     print(f'O numero {numero_desejado} nao pertence a sequencia de Fibonacci!')
 
 #############################################
+################# QUESTÃO 2 #################
+############# EXISTENCIA DE 'A' #############
+#############################################
+
+exemplo_string = 'Araraquara'
+
+if 'a' in exemplo_string.lower():
+    print(f'A letra "a" existe na string "{exemplo_string}". E ela se repete {exemplo_string.lower().count('a')} vez(es)')
+else:
+    print(f'A letra "a" não existe na string {exemplo_string}.')
+
+#############################################
 ################# QUESTÃO 3 #################
+################### SOMA ####################
+#############################################
+
+indice = 12
+soma = 0
+k = 1
+
+while k < indice:
+    k += 1
+    soma += k
+
+print(soma) ### REPOSTA: 77
+
+#############################################
+################# QUESTÃO 4 #################
 ################## PADRÕES ##################
 #############################################
 
@@ -69,11 +81,11 @@ else:
 ### LETRA F)
     ### [2,10,12,16,17,18,19]
     ### Sem lógica matemática
-    ### Todos começam com D (??????)
-    ### RESPOSTA: 200 (???)
+    ### Todos começam com D
+    ### RESPOSTA: 200
 
 #############################################
-################# QUESTÃO 4 #################
+################# QUESTÃO 5 #################
 ################## PADRÕES ##################
 #############################################
 
@@ -83,12 +95,3 @@ else:
     ### A lâmpada acesa é do Interruptor 2
     ### A fria e apagada é do interruptor 3
     ### Apenas uma ida a sala.
-
-#############################################
-################# QUESTÃO 5 #################
-########### INVERSÃO DE STRING ##############
-#############################################
-    
-texto_desejado = input('Insira a string da Questão 5: ')
-texto_desejado_invertido = texto_desejado[::-1]
-print(texto_desejado_invertido)
